@@ -2,8 +2,8 @@
 
 namespace Cristal\ApiWrapper\Concerns;
 
-use LogicException;
 use Cristal\ApiWrapper\Model;
+use LogicException;
 use Cristal\ApiWrapper\Relations\RelationInterface;
 
 trait HasAttributes
@@ -42,6 +42,13 @@ trait HasAttributes
      * @var array
      */
     protected $appends = [];
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = [];
 
     /**
      * The storage format of the model's date columns.
@@ -423,8 +430,7 @@ trait HasAttributes
         // the database connection and use that format to create the Carbon object
         // that is returned back out to the developers after we convert it here.
         return \DateTime::createFromFormat(
-            str_replace('.v', '.u', $this->getDateFormat()),
-            $value
+            str_replace('.v', '.u', $this->getDateFormat()), $value
         );
     }
 
@@ -751,8 +757,7 @@ trait HasAttributes
             // mutated attribute's actual values. After we finish mutating each of the
             // attributes we will return this final array of the mutated attributes.
             $attributes[$key] = $this->mutateAttributeForArray(
-                $key,
-                $attributes[$key]
+                $key, $attributes[$key]
             );
         }
 

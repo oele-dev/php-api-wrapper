@@ -1,5 +1,5 @@
 {
-  "name": "cristal/php-api-wrapper",
+  "name": "fallenknight85/php-api-wrapper",
   "description": "Work with APIs like with Laravel Eloquent or Doctrine (no longer a dream)",
   "type": "package",
   "authors": [
@@ -9,7 +9,7 @@
     }
   ],
   "require" : {
-    "php-curl-class/php-curl-class": "^8.3 || ^9.0",
+    "php-curl-class/php-curl-class": "^9.0",
     "psr/cache": "^1.0 || ^2.0 || ^3.0"
   },
   "suggest": {

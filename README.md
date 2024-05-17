@@ -4,16 +4,16 @@
 [![GitHub issues](https://img.shields.io/github/issues/cristalTeam/php-api-wrapper.svg?style=flat-square)](https://github.com/cristalTeam/php-api-wrapper/issues)
 [![GitHub license](https://img.shields.io/github/license/cristalTeam/php-api-wrapper.svg?style=flat-square)](https://github.com/cristalTeam/php-api-wrapper/blob/master/LICENSE)
 
-PHP API Wrapper is a smart stack based on a couple of a Transport and a smart Wrapper for your API. 
+PHP API Wrapper is a smart stack based on a couple of a Transport and a smart Wrapper for your API.
 It is designed to be easily integrated into your projects thanks to bridges for **Laravel, Symfony, API Platform** and a **standalone stack**.
 
 ## :rocket: Installation using Composer
 
 ```sh
-composer require cristal/php-api-wrapper
+composer require oele-dev/php-api-wrapper
 ```
 
-## :eyes: Quick view 
+## :eyes: Quick view
 
 ```php
 <?php
